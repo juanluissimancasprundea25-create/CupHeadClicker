@@ -1,9 +1,52 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.CupHeadClicker" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main theme of the app (light only, vintage look) -->
+    <style name="Theme.CupHeadClicker" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/cup_red</item>
+        <item name="colorOnPrimary">@color/cream_light</item>
+        <item name="colorSecondary">@color/mustard</item>
+        <item name="android:colorBackground">@color/cream</item>
+        <item name="android:windowBackground">@color/cream</item>
+        <item name="materialButtonStyle">@style/Widget.CupHead.Button</item>
     </style>
 
-    <style name="Theme.CupHeadClicker" parent="Base.Theme.CupHeadClicker" />
+    <!-- Rounded red buttons with a thick ink border -->
+    <style name="Widget.CupHead.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/button_background</item>
+        <item name="strokeColor">@color/ink</item>
+        <item name="strokeWidth">3dp</item>
+        <item name="cornerRadius">18dp</item>
+        <item name="android:textColor">@color/cream_light</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:minHeight">60dp</item>
+    </style>
+
+    <style name="CupHead.Title">
+        <item name="android:textSize">38sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">@color/sepia</item>
+        <item name="android:shadowDx">4</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="CupHead.Subtitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CupHead.Body">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
 </resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Old paper background with darker borders (vignette) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:centerX="0.5"
+        android:centerY="0.45"
+        android:endColor="@color/sepia"
+        android:gradientRadius="600dp"
+        android:startColor="@color/cream_light"
+        android:type="radial" />
+</shape>

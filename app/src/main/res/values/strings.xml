@@ -1,3 +1,61 @@
 <resources>
-    <string name="app_name">CupHeadClicker</string>
+    <string name="app_name">CupHead Clicker</string>
+    <string name="company_name">PrayTheSun Studios</string>
+    <string name="company_email">contacto@praythesun.com</string>
+
+    <!-- Login -->
+    <string name="login_subtitle">¡Un clicker de los años 30!</string>
+    <string name="login_hint">Nombre de jugador</string>
+    <string name="login_button">¡A jugar!</string>
+    <string name="error_username_empty">Escribe un nombre de jugador</string>
+    <string name="error_username_too_short">Mínimo %1$d caracteres</string>
+    <string name="error_username_too_long">Máximo %1$d caracteres</string>
+    <string name="error_username_invalid">Solo letras, números y guion bajo (_)</string>
+
+    <!-- Menu -->
+    <string name="menu_greeting">¡Hola, %1$s!</string>
+    <string name="menu_play">Jugar</string>
+    <string name="menu_ranking">Ranking</string>
+    <string name="menu_contact">Contacto</string>
+    <string name="menu_logout">Cambiar de jugador</string>
+    <string name="menu_footer">© 2026 PrayTheSun Studios</string>
+
+    <!-- Game -->
+    <string name="game_level">Nivel %1$d</string>
+    <string name="game_coins">Monedas: %1$d</string>
+    <string name="game_score">Puntos: %1$d</string>
+    <string name="game_boss_hp">%1$d / %2$d PV</string>
+    <string name="game_tap_hint">¡Toca al jefe para golpearlo!</string>
+    <string name="game_stats">Daño por toque: %1$d · Daño por segundo: %2$d</string>
+    <string name="game_upgrade_tap">+1 Puño\n%1$d monedas</string>
+    <string name="game_upgrade_auto">+1 Auto\n%1$d monedas</string>
+    <string name="game_boss_defeated">¡%1$s derrotado!</string>
+    <string name="game_boss_description">Jefe al que hay que golpear</string>
+
+    <!-- Ranking -->
+    <string name="ranking_title">Ranking</string>
+    <string name="ranking_sort_label">Ordenar por:</string>
+    <string name="ranking_empty">Todavía no hay jugadores</string>
+    <string name="ranking_position">#%1$d</string>
+    <string name="ranking_level">Nv. %1$d</string>
+    <!-- The order must match PlayerRepository.SortOrder -->
+    <string-array name="ranking_sort_options">
+        <item>Puntuación</item>
+        <item>Nivel</item>
+        <item>Nombre</item>
+    </string-array>
+
+    <!-- Contact -->
+    <string name="contact_title">Contacto</string>
+    <string name="contact_info">¿Dudas, bugs o ideas? Escríbenos y te responderemos lo antes posible.</string>
+    <string name="contact_name">Tu nombre</string>
+    <string name="contact_email">Tu email</string>
+    <string name="contact_message">Mensaje</string>
+    <string name="contact_send">Enviar</string>
+    <string name="contact_email_subject">[CupHead Clicker] Mensaje de %1$s</string>
+    <string name="contact_fix_errors">Revisa los campos marcados en rojo</string>
+    <string name="contact_no_email_app">No hay ninguna app de correo instalada</string>
+    <string name="error_contact_name">Mínimo 2 caracteres</string>
+    <string name="error_contact_email">Email no válido (ejemplo: nombre@gmail.com)</string>
+    <string name="error_contact_message">Entre %1$d y %2$d caracteres</string>
 </resources>

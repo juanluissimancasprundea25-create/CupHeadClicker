@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 1930s cartoon palette: ink, old paper, red and mustard -->
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="ink">#FF1E1A16</color>
+    <color name="cream">#FFF3E5C0</color>
+    <color name="cream_light">#FFFBF3DC</color>
+    <color name="sepia">#FFC9A66B</color>
+    <color name="cup_red">#FFC8102E</color>
+    <color name="mustard">#FFE0A526</color>
+    <color name="mustard_light">#FFF6DE9A</color>
+    <color name="disabled">#FF9E9180</color>
 </resources>

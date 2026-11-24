@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Original rubber hose style face (placeholder, replace with your own art) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Outline -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M8,100 A92,92 0 1,1 192,100 A92,92 0 1,1 8,100 Z"
+        android:strokeWidth="8"
+        android:strokeColor="#1E1A16" />
+    <!-- Angry eyebrows -->
+    <path
+        android:pathData="M50,46 L88,58"
+        android:strokeWidth="7"
+        android:strokeColor="#1E1A16"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M150,46 L112,58"
+        android:strokeWidth="7"
+        android:strokeColor="#1E1A16"
+        android:strokeLineCap="round" />
+    <!-- Eyes -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,84 A18,24 0 1,1 88,84 A18,24 0 1,1 52,84 Z"
+        android:strokeWidth="5"
+        android:strokeColor="#1E1A16" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M112,84 A18,24 0 1,1 148,84 A18,24 0 1,1 112,84 Z"
+        android:strokeWidth="5"
+        android:strokeColor="#1E1A16" />
+    <!-- Pie-cut pupils -->
+    <path
+        android:fillColor="#1E1A16"
+        android:pathData="M66,90 A8,12 0 1,1 82,90 A8,12 0 1,1 66,90 Z" />
+    <path
+        android:fillColor="#1E1A16"
+        android:pathData="M126,90 A8,12 0 1,1 142,90 A8,12 0 1,1 126,90 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M74,90 L82,82 L81,92 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M134,90 L142,82 L141,92 Z" />
+    <!-- Cheeks -->
+    <path
+        android:fillColor="#66E57373"
+        android:pathData="M34,124 A11,7 0 1,1 56,124 A11,7 0 1,1 34,124 Z" />
+    <path
+        android:fillColor="#66E57373"
+        android:pathData="M144,124 A11,7 0 1,1 166,124 A11,7 0 1,1 144,124 Z" />
+    <!-- Big grin -->
+    <path
+        android:fillColor="#1E1A16"
+        android:pathData="M56,126 Q100,178 144,126 Q100,146 56,126 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M78,136 L122,136 L118,144 L82,144 Z" />
+</vector>
