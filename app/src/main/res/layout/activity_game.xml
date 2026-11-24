@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_vintage"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.game.GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Character sheet -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_card"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_level"
+                    style="@style/CupHead.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    tools:text="Nivel 1" />
+
+                <TextView
+                    android:id="@+id/text_rank"
+                    style="@style/CupHead.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    tools:text="Novato de feria" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_coins"
+                    style="@style/CupHead.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="Monedas: 0" />
+
+                <TextView
+                    android:id="@+id/text_score"
+                    style="@style/CupHead.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Puntos: 0" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_boss_name"
+            style="@style/CupHead.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="28sp"
+            tools:text="Barón Tetera" />
+
+        <!-- Boss: colored body + face on top. The whole frame is tappable -->
+        <FrameLayout
+            android:id="@+id/boss_container"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:contentDescription="@string/game_boss_description"
+            android:focusable="true">
+
+            <View
+                android:id="@+id/view_boss_body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="9dp"
+                android:background="@drawable/shape_boss_body" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_boss_face" />
+        </FrameLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_boss_hp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginTop="16dp"
+            android:max="100"
+            android:progressTint="@color/cup_red"
+            android:progressBackgroundTint="@color/ink"
+            tools:progress="70" />
+
+        <TextView
+            android:id="@+id/text_boss_hp"
+            style="@style/CupHead.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            tools:text="35 / 50 PV" />
+
+        <TextView
+            style="@style/CupHead.Subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/game_tap_hint" />
+
+        <TextView
+            android:id="@+id/text_stats"
+            style="@style/CupHead.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            tools:text="Daño por toque: 1 · Daño por segundo: 0" />
+
+        <!-- Upgrades shop -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_upgrade_tap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                tools:text="+1 Puño\n15 monedas" />
+
+            <Button
+                android:id="@+id/button_upgrade_auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                tools:text="+1 Auto\n50 monedas" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

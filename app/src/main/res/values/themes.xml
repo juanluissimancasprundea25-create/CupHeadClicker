@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Base parent for the CupHead.* text styles (dot notation = inheritance) -->
+    <style name="CupHead" />
 
     <!-- Main theme of the app (light only, vintage look) -->
     <style name="Theme.CupHeadClicker" parent="Theme.Material3.Light.NoActionBar">
@@ -50,3 +52,4 @@
         <item name="android:fontFamily">serif</item>
     </style>
 </resources>
+
