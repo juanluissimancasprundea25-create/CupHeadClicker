@@ -33,6 +33,8 @@ public class RankingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ranking);
+        // Closes this screen and goes back to the menu, which is still in the back stack
+        findViewById(R.id.button_back).setOnClickListener(v -> finish());
         viewModel = new ViewModelProvider(this).get(RankingViewModel.class);
 
         progressBar = findViewById(R.id.progress_ranking);

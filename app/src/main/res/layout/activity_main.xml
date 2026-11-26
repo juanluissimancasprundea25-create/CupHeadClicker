@@ -10,6 +10,14 @@
     android:padding="32dp"
     tools:context=".ui.menu.MainActivity">
 
+    <Button
+        android:id="@+id/button_back"
+        style="@style/Widget.CupHead.BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="@string/back" />
+
     <TextView
         style="@style/CupHead.Title"
         android:layout_width="match_parent"

@@ -33,6 +33,8 @@ public class ContactActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
+        // Closes this screen and goes back to the menu, which is still in the back stack
+        findViewById(R.id.button_back).setOnClickListener(v -> finish());
 
         nameLayout = findViewById(R.id.layout_contact_name);
         emailLayout = findViewById(R.id.layout_contact_email);

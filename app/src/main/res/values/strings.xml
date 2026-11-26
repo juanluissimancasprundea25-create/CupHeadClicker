@@ -58,4 +58,6 @@
     <string name="error_contact_name">Mínimo 2 caracteres</string>
     <string name="error_contact_email">Email no válido (ejemplo: nombre@gmail.com)</string>
     <string name="error_contact_message">Entre %1$d y %2$d caracteres</string>
+
+    <string name="back">← Volver</string>
 </resources>

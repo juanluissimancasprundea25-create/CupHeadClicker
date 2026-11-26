@@ -45,6 +45,8 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+        // Closes this screen and goes back to the menu, which is still in the back stack
+        findViewById(R.id.button_back).setOnClickListener(v -> finish());
         viewModel = new ViewModelProvider(this).get(GameViewModel.class);
 
         bindViews();
