@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="32dp"
-        android:text="@string/login_subtitle" />
+        android:text="¡Un clicker con estilo CupHead!" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_username"
