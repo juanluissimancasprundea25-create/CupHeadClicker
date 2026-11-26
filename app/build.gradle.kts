@@ -32,6 +32,20 @@ android {
 }
 
 dependencies {
+    // Room: base de datos local SQLite (Tarea 2 y 3)
+    implementation("androidx.room:room-runtime:2.6.1")
+    annotationProcessor("androidx.room:room-compiler:2.6.1")
+
+    // ViewModel y LiveData (arquitectura MVVM)
+    implementation("androidx.lifecycle:lifecycle-viewmodel:2.8.7")
+    implementation("androidx.lifecycle:lifecycle-livedata:2.8.7")
+
+    // Lista del ranking
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+
+    // LeakCanary: detecta fugas de memoria SOLO en la versión debug
+    debugImplementation("com.squareup.leakcanary:leakcanary-android:2.14")
+
     implementation(libs.activity.ktx)
     implementation(libs.appcompat)
     implementation(libs.constraintlayout)
